@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    box-sizing: border-box;
     
 }
 
@@ -35,5 +36,18 @@ body {
     flex: 1 0 auto;
     flex-wrap: wrap;
     box-sizing: border-box;
-    
+}
+
+.text {
+    padding: 10px 0;
+}
+
+.input {
+    width: 50px;
+}
+
+.warning-text {
+    color: rgb(255, 73, 73);
+    padding: 10px 1px;
+    position: absolute;
 }

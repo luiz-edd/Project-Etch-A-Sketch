@@ -47,6 +47,13 @@ function changeColor(e){
 
 function getGridValueInput(){
     const input = document.querySelector('.input');
+    const warning = document.querySelector('.warning-text');
+    warning.textContent = "";
+    if( isNaN(input.valueAsNumber) || input.valueAsNumber <= 0 || input.valueAsNumber > 100){
+        warning.textContent = "Invalid value"
+        return;
+    }
+
     console.log(input.textContent);
     return parseInt(input.value);
 }
