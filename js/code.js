@@ -9,7 +9,7 @@ function createSquare(){
 }
 
 function createGrid(gridProportion){
-    deleteGrid();
+    if(!isNaN(gridProportion)) deleteGrid();
     for(let i = 0;i<gridProportion; i++){
         let div = createSquare();
         for(let j = 0;j < gridProportion;j++){
@@ -40,8 +40,8 @@ function pixelateGrid(){
 }
 
 function changeColor(e){
-    this.style.cssText = "background: black;";
-    console.log(this);
+    color = document.querySelector(".color-picker");
+    this.style.cssText = `background: ${color.value};`;
 }
 
 
@@ -53,9 +53,7 @@ function getGridValueInput(){
         warning.textContent = "Invalid value"
         return;
     }
-
-    console.log(input.textContent);
-    return parseInt(input.value);
+    return input.valueAsNumber;
 }
 
 const btn = document.querySelector('.btn');

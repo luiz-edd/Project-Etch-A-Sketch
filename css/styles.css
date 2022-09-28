@@ -46,8 +46,23 @@ body {
     width: 50px;
 }
 
+.color-picker {
+    width: 60px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+    flex: 0 0 auto;
+}
+
 .warning-text {
     color: rgb(255, 73, 73);
     padding: 10px 1px;
     position: absolute;
 }
+
+.rgb-button {
+    
+}
+
