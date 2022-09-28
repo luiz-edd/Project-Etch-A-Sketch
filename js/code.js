@@ -23,4 +23,19 @@ function createSquareColumn(parent){
     parent.appendChild(div);
 }
 
+function pixelateGrid(){
+    const div = document.querySelectorAll(".square-column")
+    div.forEach(div =>{
+        div.addEventListener('mouseover', changeColor);
+    })
+}
+
+function changeColor(e){
+    this.style.cssText = "background: black;";
+    console.log(this);
+}
+
+
 createGrid(16);
+pixelateGrid();
+

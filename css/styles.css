@@ -14,21 +14,23 @@ body {
     display: flex;
     width: 500px;
     height: 500px;
-    border: solid 1px black;
+    outline: solid 2px rgb(159, 159, 159);
+    flex: 0 0 auto;
 }
 
 .square {
     display: flex;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     flex-direction: column;
     box-sizing: border-box;
+    
 }
 
 .square-column {
     display: flex;
     flex-direction: column;
-    outline: solid 1px black;
-    flex: 1 1 auto;
+    outline: solid 1px rgb(159, 159, 159);
+    flex: 1 0 auto;
     flex-wrap: wrap;
     box-sizing: border-box;
     
