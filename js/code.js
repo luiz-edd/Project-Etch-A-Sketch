@@ -23,4 +23,4 @@ function createSquareColumn(parent){
     parent.appendChild(div);
 }
 
-createGrid(5);
+createGrid(16);
