@@ -9,6 +9,7 @@ function createSquare(){
 }
 
 function createGrid(gridProportion){
+    deleteGrid();
     for(let i = 0;i<gridProportion; i++){
         let div = createSquare();
         for(let j = 0;j < gridProportion;j++){
@@ -16,6 +17,14 @@ function createGrid(gridProportion){
         }
     }
 }
+
+function deleteGrid(){
+    const divs = document.querySelectorAll(".content div");
+    divs.forEach( div => {
+        div.remove();
+    });
+}
+
 
 function createSquareColumn(parent){
     const div = document.createElement('div');
@@ -36,6 +45,18 @@ function changeColor(e){
 }
 
 
-createGrid(16);
-pixelateGrid();
+function getGridValueInput(){
+    const input = document.querySelector('.input');
+    console.log(input.textContent);
+    return parseInt(input.value);
+}
+
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', () => {
+    createGrid(getGridValueInput());
+    pixelateGrid();
+})
+
+
 
