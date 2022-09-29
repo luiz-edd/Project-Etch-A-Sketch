@@ -40,8 +40,15 @@ function pixelateGrid(){
 }
 
 function changeColor(e){
-    color = document.querySelector(".color-picker");
-    this.style.cssText = `background: ${color.value};`;
+    rgb = document.querySelector(".rgb-check");
+    if(rgb.checked){
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        this.style.cssText = `background: #${randomColor};`;
+    } else {
+        color = document.querySelector(".color-picker");
+        this.style.cssText = `background: ${color.value};`;
+    }
+
 }
 
 
