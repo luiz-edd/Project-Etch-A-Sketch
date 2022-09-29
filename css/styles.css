@@ -1,7 +1,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    
+    font-family: 'Love Ya Like A Sister', cursive;
 }
 
 .container {
@@ -10,14 +10,13 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
 }
 
 .content {
     display: flex;
-    width: 500px;
-    height: 500px;
-    outline: solid 2px rgb(159, 159, 159);
+    width: 600px;
+    height: 600px;
+    outline: solid 1px black;
     flex: 0 0 auto;
 }
 
@@ -32,14 +31,16 @@ body {
 .square-column {
     display: flex;
     flex-direction: column;
-    outline: solid 1px rgb(159, 159, 159);
+    outline: solid 1px rgb(0, 0, 0);
     flex: 1 0 auto;
     flex-wrap: wrap;
     box-sizing: border-box;
+    background-color: white;
 }
 
 .text {
-    padding: 10px 0;
+    padding: 8px 0;
+    margin: 0;
 }
 
 .input {
@@ -73,3 +74,14 @@ button {
     transform: scale(1.5);
 }
 
+.title {
+    margin-top: 30px;
+    font-size: 90px;
+}
+
+.text-content {
+    
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
