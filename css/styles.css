@@ -5,7 +5,6 @@ body {
 }
 
 .container {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +38,7 @@ body {
 }
 
 .text {
-    padding: 8px 0;
+    padding-bottom: 2px;
     margin: 0;
 }
 
@@ -59,10 +58,6 @@ body {
     align-items: center;
 }
 
-button {
-
-}
-
 
 .warning-text {
     color: rgb(255, 73, 73);
@@ -75,12 +70,10 @@ button {
 }
 
 .title {
-    margin-top: 30px;
     font-size: 90px;
 }
 
 .text-content {
-    
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 40px;
